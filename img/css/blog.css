@@ -1,0 +1,164 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --header-height: 3.5rem;
+
+    /*========== Colors ==========*/
+    --title-color: hsl(250, 8%, 15%);
+    --text-color: hsl(250, 8%, 35%);
+    --body-color: hsl(250, 60%, 98%);
+    --container-color: #fff;
+    --shadow: hsla(0, 0%, 15%, .1);
+    --scroll-bar-color: hsl(250, 12%, 90%);
+    --scroll-thumb-color: hsl(250, 12%, 80%);
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-bold: 600;
+
+    /*========== Margenes Bottom ==========*/
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+.blog_container{
+    row-gap: 1.8rem;
+}
+.blog_post{
+    grid-template-columns: .8fr 1.2fr;
+    column-gap: 2rem;
+    align-items: center;
+    background-color: var(--container-color);
+    border-radius: 1.2rem;
+    padding: 1.4rem;
+}
+.blog_img{
+    border-radius: .8rem;
+}
+.blog_details{
+    font-size: var(--small-font-size);
+    text-align: justify;
+    margin-bottom: var(--mb-1);
+}
+.blog_title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-5);
+}
+.blog_date{
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    margin-bottom: var(--mb-0-75);
+}
+.read_more{
+    text-align: right;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: .8rem;
+    margin-top: var(--mb-2-5);
+    font-size: var(--normal-font-size);
+}
+.pagination span{
+    width: 2.2rem;
+    height: 2.2rem;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pagination .current{
+    background-color: var(--first-color);
+    color: #fff;
+}
+.pagination_icon{
+    font-size: var(--h2-font-size);
+}
+@media screen and (max-width: 992px) {
+    .blog_post{
+        column-gap: 1.6rem;
+    }
+    .blog_title{
+        font-size: var(--normal-font-size);
+    }
+}
+@media screen and (max-width: 767px){
+    .blog_post{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 576px){
+    .blog_post{
+      grid-template-columns: 1fr;
+      row-gap: .8rem;  
+    }
+}
+@media screen and (max-width: 320px) {
+    .blog_post{
+        padding: .8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive typography */
+@media screen and (max-width: 992px) {
+    :root {
+        --biggest-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+    }
+}
+
+
+
+
